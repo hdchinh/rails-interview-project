@@ -46,3 +46,6 @@ group :development do
 end
 
 gem 'ffaker'
+
+# Pagination
+gem 'kaminari'

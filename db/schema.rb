@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_05_143447) do
+ActiveRecord::Schema.define(version: 2022_03_05_155917) do
 
   create_table "answers", force: :cascade do |t|
     t.string "body", null: false
@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 2022_03_05_143447) do
     t.string "api_key", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "access_count", default: 0
     t.index ["api_key"], name: "index_tenants_on_api_key", unique: true
   end
 

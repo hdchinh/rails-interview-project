@@ -7,6 +7,10 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
+  scope :api, module: :api, defaults: { format: :json } do
+    resources :questions, only: [:index, :show]
+  end
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
