@@ -35,6 +35,21 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'rubocop', require: false
+  gem 'rubocop-performance', require: false
+  gem 'rubocop-rails', require: false
+  gem 'rubocop-rspec', require: false
+  gem 'rspec-rails', '~> 4.0.1'
+  gem 'guard-rspec', require: false
+  gem 'factory_bot_rails'
+  gem 'amazing_print'
+  gem 'bundler-audit'
+  gem 'simplecov', :require => false
+  gem 'faker'
+  gem 'shoulda-matchers', '~> 4.0'
+  gem 'json_matchers'
+  gem 'rails-controller-testing'
+  gem 'shoulda-callback-matchers', '~> 1.1', '>= 1.1.4'
 end
 
 group :development do
