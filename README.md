@@ -1,4 +1,28 @@
-# (Forked from Kaleo) 
+[![Build Status](https://app.travis-ci.com/hdchinh/rails-interview-project.svg?branch=master)](https://app.travis-ci.com/hdchinh/rails-interview-project)
+
+1. Run unit tests
+```
+bundle exec rspec
+```
+
+2. API endpoints
+
+```
+/api/questions => get list questions (with answers)
+/api/questions/:id => get question (with answers)
+```
+
+3. Test folder
+```
+/spec/**.rb
+```
+
+4. Controller folder
+```
+/app/controllers/api/**.rb
+```
+
+# (Forked from Kaleo)
 # Rails Engineer Candidate Interview Project
 
 Thanks for taking the time to complete this exercise. We're excited that you're considering joining our amazing team.
